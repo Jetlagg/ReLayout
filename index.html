@@ -9,153 +9,212 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="nav-container">
-            <a href="#" class="logo">THE ORDINARY</a>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="#skincare">Skincare</a></li>
-                    <li><a href="#makeup">Makeup</a></li>
-                    <li><a href="#hair-body">Hair & Body</a></li>
-                    <li><a href="#regimen">Regimen Builder</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
-            <div class="nav-icons">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-shopping-bag"></i>
-            </div>
-        </div>
-    </header>
+    <div class="heropic">
+        <video autoplay muted loop playsinline>
+            <source src="https://cdn.media.amplience.net/v/deciem/2025-07-15-ORD-Web-July-Always-On-Homepage-Mobile-SPF/mp4_720p" type="video/mp4">
+        </video>
 
-    <!-- Hero Section -->
-    <section class="hero loading">
-        <div class="hero-content">
-            <h1>Clinical Formulations<br>with Integrity</h1>
-            <p class="hero-subtitle">
-                Science-backed skincare solutions that deliver results without compromising on quality or transparency
-            </p>
-            <a href="#products" class="cta-button">Shop Now</a>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <h2 class="section-title scroll-animate">Why Choose The Ordinary</h2>
-            <div class="features-grid">
-                <div class="feature-card scroll-animate">
-                    <div class="feature-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <h3 class="feature-title">Science-Based</h3>
-                    <p class="feature-description">
-                        Clinical formulations backed by research and proven active ingredients for effective results
-                    </p>
+        <header class="header" id="header">
+            <div class="nav-container">
+                <div class="nav-one">
+                    <a href="#header" class="logo">The Ordinary</a>
+                    <nav>
+                        <ul class="nav-menu">
+                            <li><a href="#skincare">Bestseller</a></li>
+                            <li><a href="#skincare">New & Featured</a></li>
+                            <li><a href="#skincare">Skincare</a></li>
+                            <li><a href="#hair-body">Hair & Body</a></li>
+                            <li><a href="#makeup">Set & Collections</a></li>
+                            <li><a href="#regimen">The O. Library</a></li>
+                            <li><a href="#about">Build My Regimen</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="feature-card scroll-animate">
-                    <div class="feature-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3 class="feature-title">Transparent</h3>
-                    <p class="feature-description">
-                        Clear labeling with ingredient concentrations and honest communication about what each product does
-                    </p>
-                </div>
-                <div class="feature-card scroll-animate">
-                    <div class="feature-icon">
-                        <i class="fas fa-dollar-sign"></i>
-                    </div>
-                    <h3 class="feature-title">Accessible</h3>
-                    <p class="feature-description">
-                        High-quality skincare at affordable prices, making effective treatments available to everyone
-                    </p>
+                <div class="nav-icons">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-user"></i>
+                    <i class="fas fa-shopping-bag"></i>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Products Section -->
-    <section class="products" id="products">
-        <div class="container">
-            <h2 class="section-title scroll-animate">Best Sellers</h2>
-            <div class="products-grid">
-                <div class="product-card scroll-animate">
-                    <div class="product-image">
-                        <span>Niacinamide 10% + Zinc 1%</span>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Niacinamide 10% + Zinc 1%</h3>
-                        <p class="product-description">
-                            Reduces appearance of skin blemishes and congestion
-                        </p>
-                        <div class="product-price">$7.90</div>
-                    </div>
-                </div>
-                <div class="product-card scroll-animate">
-                    <div class="product-image">
-                        <span>Hyaluronic Acid 2% + B5</span>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Hyaluronic Acid 2% + B5</h3>
-                        <p class="product-description">
-                            Hydrating serum for plump, smooth skin
-                        </p>
-                        <div class="product-price">$8.90</div>
-                    </div>
-                </div>
-                <div class="product-card scroll-animate">
-                    <div class="product-image">
-                        <span>AHA 30% + BHA 2%</span>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">AHA 30% + BHA 2% Peeling Solution</h3>
-                        <p class="product-description">
-                            Weekly treatment for smoother, brighter skin
-                        </p>
-                        <div class="product-price">$8.50</div>
+        <!-- Hero Section -->
+        <section class="hero loading">
+            <div class="hero-content">
+                <p class="hero-subtitle">
+                    Multi-Antioxdant Radiance Serum brightens your skin <br> with multi-antioxidant protection.
+                </p>
+                <h1>Go Beyond Vitamin C.</h1>
+                <a href="#products" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bestseller -->
+    <div class="container">
+        <div class="bestseller">
+            <h1>Bestsellers</h1>
+            <a href="#" class="view-all">View All</a>
+        </div>
+
+        <div class="bestseller-grid">
+            <div class="bestseller-card">
+                <div class="bestseller-badge">Bestseller</div>
+                <button class="favorite-btn" onclick="toggleFavorite(this)">♡</button>
+                
+                <div class="bestseller-image">
+                    <img src="resorce/glycolic.png" alt="Glycolic Acid 7% Exfoliating Toner">
+                    <div class="award-badge">
+                        <img src="resorce/skincare-award.webp" alt="">
                     </div>
                 </div>
-                <div class="product-card scroll-animate">
-                    <div class="product-image">
-                        <span>Retinol 0.2% in Squalane</span>
+                
+                <div class="product-info">
+                    <h3 class="product-title">Glycolic Acid 7% Exfoliating Toner</h3>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <span class="rating-count">4.5 (1114)</span>
                     </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Retinol 0.2% in Squalane</h3>
-                        <p class="product-description">
-                            Anti-aging treatment to target signs of aging
-                        </p>
-                        <div class="product-price">$9.90</div>
+                    
+                    <div class="bestseller-description">Evens Texture & Tone, Radiance</div>
+                    
+                    <div class="bestseller-pricing">
+                        <div class="price">8.70 USD</div>
+                        <div class="size-options">
+                            <span class="size-option">100ml</span>
+                            <span class="size-option">240ml</span>
+                        </div>
                     </div>
-                </div>
-                <div class="product-card scroll-animate">
-                    <div class="product-image">
-                        <span>Vitamin C Suspension</span>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Vitamin C Suspension 23% + HA Spheres 2%</h3>
-                        <p class="product-description">
-                            Brightening treatment with antioxidant support
-                        </p>
-                        <div class="product-price">$8.20</div>
-                    </div>
-                </div>
-                <div class="product-card scroll-animate">
-                    <div class="product-image">
-                        <span>Squalane Cleanser</span>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Squalane Cleanser</h3>
-                        <p class="product-description">
-                            Gentle, moisturizing cleanser for all skin types
-                        </p>
-                        <div class="product-price">$8.90</div>
-                    </div>
+                    
+                    <button class="add-to-cart" onclick="addToCart(this)">Add To Cart</button>
                 </div>
             </div>
+
+            <div class="bestseller-card">
+                <div class="bestseller-badge">Bestseller</div>
+                <button class="favorite-btn" onclick="toggleFavorite(this)">♡</button>
+                
+                <div class="bestseller-image">
+                    <img src="resorce/multi-peptide.png" alt="Multi-Peptide + Copper Peptides 1% Serum">
+                </div>
+                
+                <div class="product-info">
+                    <h3 class="product-title">Multi-Peptide + Copper Peptides 1% Serum</h3>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <span class="rating-count">4.5 (1031)</span>
+                    </div>
+                    
+                    <div class="bestseller-description">For Advanced Signs Of Aging</div>
+                    
+                    <div class="bestseller-pricing">
+                        <div class="price">32.00 USD</div>
+                        <div class="size-options">
+                            <span class="size-option">30ml</span>
+                        </div>
+                    </div>
+                    
+                    <button class="add-to-cart" onclick="addToCart(this)">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="bestseller-card">
+                <div class="bestseller-badge">Bestseller</div>
+                <button class="favorite-btn" onclick="toggleFavorite(this)">♡</button>
+                
+                <div class="bestseller-image">
+                    <img src="resorce/hyaluronic.png" alt="Hyaluronic Acid 2% + B5">
+                    <div class="award-badge">
+                        <img src="resorce/ORD.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <h3 class="product-title">Hyaluronic Acid 2% + B5 (with Ceramides)</h3>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star empty">★</span>
+                        </div>
+                        <span class="rating-count">4.4 (1656)</span>
+                    </div>
+                    
+                    <div class="bestseller-description">Plumps, Smooths</div>
+                    
+                    <div class="bestseller-pricing">
+                        <div class="price">9.90 USD</div>
+                        <div class="size-options">
+                            <span class="size-option">30ml</span>
+                            <span class="size-option">60ml</span>
+                        </div>
+                    </div>
+                    
+                    <button class="add-to-cart" onclick="addToCart(this)">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="bestseller-card">
+                <div class="bestseller-badge">Bestseller</div>
+                <button class="favorite-btn" onclick="toggleFavorite(this)">♡</button>
+                
+                <div class="bestseller-image">
+                    <img src="resorce/niacinamide.png" alt="Niacinamide 10% + Zinc 1%">
+                    <div class="award-badge">
+                        <img src="resorce/sheerluxe.webp" alt="">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <h3 class="product-title">Niacinamide 10% + Zinc 1%</h3>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star empty">★</span>
+                        </div>
+                        <span class="rating-count">4.4 (2484)</span>
+                    </div>
+                    
+                    <div class="bestseller-description">Oil Control, Brightens, Smooths</div>
+                    
+                    <div class="bestseller-pricing">
+                        <div class="price">6.00 USD</div>
+                        <div class="size-options">
+                            <span class="size-option">30ml</span>
+                            <span class="size-option">60ml</span>
+                        </div>
+                    </div>
+                    
+                    <button class="add-to-cart" onclick="addToCart(this)">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="scroll-indicator" onclick="scrollProducts()">
+                ›
+            </div>
         </div>
-    </section>
+    </div>
 
     <!-- Newsletter Section -->
     <section class="newsletter">
