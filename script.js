@@ -65,40 +65,40 @@ window.addEventListener('load', () => {
     document.querySelector('.loading').style.opacity = '1';
 });
 
-function toggleFavorite(button) {
-    button.classList.toggle('active');
-    if (button.classList.contains('active')) {
-        button.textContent = '♥';
-        button.style.color = '#ff6b6b';
-    } else {
-        button.textContent = '♡';
-        button.style.color = '#ccc';
-    }
-}
+// function toggleFavorite(button) {
+//     button.classList.toggle('active');
+//     if (button.classList.contains('active')) {
+//         button.textContent = '♥';
+//         button.style.color = '#ff6b6b';
+//     } else {
+//         button.textContent = '♡';
+//         button.style.color = '#ccc';
+//     }
+// }
 
-function scrollProducts() {
-    const grid = document.querySelector('.bestseller-grid');
-    grid.scrollLeft += 320;
-}
+// function scrollProducts() {
+//     const grid = document.querySelector('.bestseller-grid');
+//     grid.scrollLeft += 320;
+// }
 
-document.querySelector('.bestseller-grid').addEventListener('wheel', (e) => {
-    if (e.deltaY !== 0) {
-        e.preventDefault();
-        e.currentTarget.scrollLeft += e.deltaY;
-    }
-});
+// document.querySelector('.bestseller-grid').addEventListener('wheel', (e) => {
+//     if (e.deltaY !== 0) {
+//         e.preventDefault();
+//         e.currentTarget.scrollLeft += e.deltaY;
+//     }
+// });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.bestseller-card');
+// document.addEventListener('DOMContentLoaded', function() {
+//     const cards = document.querySelectorAll('.bestseller-card');
     
-    cards.forEach((card, index) => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(20px)';
+//     cards.forEach((card, index) => {
+//         card.style.opacity = '0';
+//         card.style.transform = 'translateY(20px)';
         
-        setTimeout(() => {
-            card.style.transition = 'all 0.6s ease';
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-        }, index * 100);
-    });
-});
+//         setTimeout(() => {
+//             card.style.transition = 'all 0.6s ease';
+//             card.style.opacity = '1';
+//             card.style.transform = 'translateY(0)';
+//         }, index * 100);
+//     });
+// });
