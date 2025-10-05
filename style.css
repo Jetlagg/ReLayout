@@ -351,11 +351,6 @@ body {
         color: #000;
     }
 
-    .header:hover .dropdown-menu,
-    .dropdown-container:hover .dropdown-menu {
-        display: none;
-    }
-
     .hamburger-menu {
         display: block;
         order: 1;

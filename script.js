@@ -16,7 +16,9 @@ hamburger.addEventListener('click', () => {
 });
 
 document.querySelectorAll('.dropdown-container .arrow').forEach(arrow => {
-    arrow.addEventListener('click', () => {
+    arrow.addEventListener('click', (e) => {
+        e.preventDefault();
+
         const dropdownMenu = arrow.parentElement.nextElementSibling;
 
         document.querySelectorAll('.dropdown-menu').forEach(menu => {
@@ -30,6 +32,7 @@ document.querySelectorAll('.dropdown-container .arrow').forEach(arrow => {
         arrow.classList.toggle('open');
     });
 });
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const header = document.querySelector('.header');
