@@ -15,6 +15,22 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
+document.querySelectorAll('.dropdown-container .arrow').forEach(arrow => {
+    arrow.addEventListener('click', () => {
+        const dropdownMenu = arrow.parentElement.nextElementSibling;
+
+        document.querySelectorAll('.dropdown-menu').forEach(menu => {
+            if (menu !== dropdownMenu) menu.classList.remove('open');
+        });
+        document.querySelectorAll('.arrow').forEach(a => {
+            if (a !== arrow) a.classList.remove('open');
+        });
+
+        dropdownMenu.classList.toggle('open');
+        arrow.classList.toggle('open');
+    });
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     const header = document.querySelector('.header');
     const dropdownContainers = document.querySelectorAll('.dropdown-container');
@@ -83,7 +99,7 @@ window.addEventListener('scroll', () => {
         header.classList.add('scrolled');
     } else {
         header.classList.remove('scrolled');
-  }
+    }
 });
 
 const mobileMenuToggle = () => {
@@ -120,7 +136,7 @@ const dots = document.querySelectorAll('.dot');
 function showSlide(i) {
     index = (i + slides.length) % slides.length;
     document.querySelector('.slides').style.transform = `translateX(-${index * 100}%)`;
-    
+
     dots.forEach(dot => dot.classList.remove('active'));
     dots[index].classList.add('active');
 }
@@ -138,7 +154,7 @@ let isDragging = false;
 function startDrag(e) {
     isDragging = true;
     startX = e.touches[0].clientX;
-    slidesContainer.style.transition = "none"; 
+    slidesContainer.style.transition = "none";
 }
 
 function onDrag(e) {
@@ -153,7 +169,7 @@ function endDrag() {
     isDragging = false;
 
     const deltaX = currentX - startX;
-    slidesContainer.style.transition = "transform 0.3s ease"; 
+    slidesContainer.style.transition = "transform 0.3s ease";
 
     if (deltaX > 50) {
         showSlide(index - 1);
@@ -188,10 +204,10 @@ function changeImage(el) {
 // image
 boxes.forEach(box => {
     box.addEventListener('mouseenter', () => {
-        boxes.forEach(b => b.style.flex = '0.8'); 
-        box.style.flex = '1.2'; 
+        boxes.forEach(b => b.style.flex = '0.8');
+        box.style.flex = '1.2';
     });
-    
+
     box.addEventListener('mouseleave', () => {
         boxes.forEach(b => b.style.flex = '1');
     });
